@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div>
+      현재 시간 :
+      <h2 id="clock">00:00:00</h2>
+    </div>
+    <form id="login-form" class="hidden">
+      <fieldset>
+        <legend>Login</legend>
+        아이디 :<input
+          id="login"
+          type="text"
+          placeholder="아이디를 입력하세요."
+          required
+          maxlength="10"
+        /><br />
+
+        비밀번호 :
+        <input
+          type="password"
+          id="password"
+          placeholder="비밀번호를 입력하세요."
+        />
+        <br />
+        <button id="loginButton">로그인</button>
+        <button id="joinMembership">회원가입</button>
+      </fieldset>
+    </form>
+    <form id="join-form" class="hidden">
+      아이디 : <input type="text" required maxlength="10" id="joinId" />
+      <button id="idCheck">아이디 중복 확인</button> <br />
+
+      비밀번호 <input type="text" required id="joinPassword" /> <br />
+      <button id="joinSuccess">회원가입 완료</button>
+    </form>
+    <div id="loginScreen" class="hidden">
+      <p id="loginsuccess"></p>
+      <button id="logoutButton">로그아웃</button>
+    </div>
+    <script src="login.js"></script>
+    <script src="clock.js"></script>
+  </body>
+</html>
